@@ -1,4 +1,1 @@
-Compile: `mvn clean compile assembly:single`
-
-
-Execute XSD generation: `java -jar target/lucid-sams-schema-1.0-SNAPSHOT-jar-with-dependencies.jar`
+Run `$ ./buildAndGenerateSchemas.sh` in the project to generate new xsd and java classes from the hosted SASAMS schemas.

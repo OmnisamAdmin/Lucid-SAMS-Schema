@@ -6,7 +6,6 @@ import org.jsoup.nodes.Element;
 import za.co.sfy.sams.exception.LucidSamsExecutionException;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.MalformedURLException;
@@ -38,16 +37,12 @@ public class XSDBuilder {
         long start = new Date().getTime();
         LOGGER.info("Generating Combined XSD");
 
-        File outputFile = new File(outputLocation);
         createNewFile();
-
         ArrayList<URL> fileLocations = readDirectory();
         for (URL fileLocation : fileLocations) {
-            buildFileConents(outputFile, fileLocation);
+            buildFileContents(fileLocation);
             LOGGER.info("Finished appending: " + fileLocation);
         }
-
-
 
         addClosingTag();
         long end = new Date().getTime();
@@ -56,7 +51,7 @@ public class XSDBuilder {
         LOGGER.info("Completed in: " + diff + " Seconds");
     }
 
-    private void buildFileConents(File outputFile, URL fileLocation) throws LucidSamsExecutionException {
+    private void buildFileContents(URL fileLocation) throws LucidSamsExecutionException {
         BufferedReader bufferedReader = null;
         try {
             bufferedReader = new BufferedReader(new InputStreamReader(fileLocation.openStream()));
