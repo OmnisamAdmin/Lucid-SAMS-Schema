@@ -119,7 +119,7 @@
                         </executions>
                         <configuration>
                             <packageName>za.co.sfy.sams</packageName>
-                            <outputDirectory>src/main/resources/generated/</outputDirectory>
+                            <outputDirectory>src/main/java/za/co/sfy/sams/</outputDirectory>
                             <target>2.1</target>
                             <sources>
                                 <source>SASAMS_Schemas.xsd</source>
