@@ -118,8 +118,8 @@
                             </execution>
                         </executions>
                         <configuration>
-                            <packageName>za.co.sfy.sams</packageName>
-                            <outputDirectory>src/main/resources/generated/</outputDirectory>
+                            <packageName>za.co.sfy.sams.lucid.schema</packageName>
+                            <outputDirectory>src/main/java/za/co/sfy/sams/generated</outputDirectory>
                             <target>2.1</target>
                             <sources>
                                 <source>SASAMS_Schemas.xsd</source>
