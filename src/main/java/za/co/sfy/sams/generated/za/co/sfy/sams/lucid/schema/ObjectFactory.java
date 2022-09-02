@@ -486,6 +486,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link DeliveryRecieved }
+     * 
+     */
+    public DeliveryRecieved createDeliveryRecieved() {
+        return new DeliveryRecieved();
+    }
+
+    /**
      * Create an instance of {@link DemeritMeritSettings }
      * 
      */
@@ -763,6 +771,14 @@ public class ObjectFactory {
      */
     public FeederSchools createFeederSchools() {
         return new FeederSchools();
+    }
+
+    /**
+     * Create an instance of {@link FeedingRegister }
+     * 
+     */
+    public FeedingRegister createFeedingRegister() {
+        return new FeedingRegister();
     }
 
     /**
@@ -1590,6 +1606,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MenuPlan }
+     * 
+     */
+    public MenuPlan createMenuPlan() {
+        return new MenuPlan();
+    }
+
+    /**
      * Create an instance of {@link ModeTransport }
      * 
      */
@@ -1755,6 +1779,14 @@ public class ObjectFactory {
      */
     public QualificationsTypes createQualificationsTypes() {
         return new QualificationsTypes();
+    }
+
+    /**
+     * Create an instance of {@link QuaterlyRecievedTransfer }
+     * 
+     */
+    public QuaterlyRecievedTransfer createQuaterlyRecievedTransfer() {
+        return new QuaterlyRecievedTransfer();
     }
 
     /**
@@ -2366,6 +2398,22 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link StockManagement }
+     * 
+     */
+    public StockManagement createStockManagement() {
+        return new StockManagement();
+    }
+
+    /**
+     * Create an instance of {@link StoreQuanties }
+     * 
+     */
+    public StoreQuanties createStoreQuanties() {
+        return new StoreQuanties();
+    }
+
+    /**
      * Create an instance of {@link SubjectAverages }
      * 
      */
@@ -2494,6 +2542,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link Supplier }
+     * 
+     */
+    public Supplier createSupplier() {
+        return new Supplier();
+    }
+
+    /**
      * Create an instance of {@link SysLogs }
      * 
      */
@@ -2582,6 +2638,14 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link TotalUsedIngredients }
+     * 
+     */
+    public TotalUsedIngredients createTotalUsedIngredients() {
+        return new TotalUsedIngredients();
+    }
+
+    /**
      * Create an instance of {@link TrainingAttended }
      * 
      */
@@ -2627,6 +2691,30 @@ public class ObjectFactory {
      */
     public Patches createPatches() {
         return new Patches();
+    }
+
+    /**
+     * Create an instance of {@link LstFoodGroup }
+     * 
+     */
+    public LstFoodGroup createLstFoodGroup() {
+        return new LstFoodGroup();
+    }
+
+    /**
+     * Create an instance of {@link LstProducts }
+     * 
+     */
+    public LstProducts createLstProducts() {
+        return new LstProducts();
+    }
+
+    /**
+     * Create an instance of {@link LstSchoolLevel }
+     * 
+     */
+    public LstSchoolLevel createLstSchoolLevel() {
+        return new LstSchoolLevel();
     }
 
 }
